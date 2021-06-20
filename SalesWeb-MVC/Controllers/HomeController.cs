@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using SalesWeb_MVC.Models.ViewsModels;
 
 namespace SalesWeb_MVC.Controllers
 {
@@ -25,6 +26,9 @@ namespace SalesWeb_MVC.Controllers
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
+            ViewData["User"] = "Tiago Emanuel";
+            ViewData["UserPhone"] = "11-954292714";
+            ViewData["UserEmail"] = "reissilvat@gmail.com";
 
             return View();
         }
